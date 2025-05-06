@@ -2,7 +2,7 @@ def ReversedNumber(n):
     rev = 0
     while n>0:
         rem = n % 10 # it will store the last digit
-        rev = rev * 10 + rem # here it will multilpe rev with 10 and add the reminder means 0 * 10 + reminder which will return the reminder in first loop
+        rev = rev * 10 + rem # here it will multiply rev with 10 and add the reminder means 0 * 10 + 5 which will return 5 
         n = n//10 # it will remove the last digit of n
         
     return rev
