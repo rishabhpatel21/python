@@ -25,3 +25,9 @@ print(f"{person['name']} is {person['age']} years old and has a qualification of
 fruits = ["apple", "banana", "cherry"]
 print(f"My favorite fruits are: {', '.join(fruits)}.")
 # Output: My favorite fruits are: apple, banana, cherry
+
+#Math with f-strings
+x = 10
+y = 5   
+print(f"{x} + {y} = {x + y}")
+# Output: 10 + 5 = 15
