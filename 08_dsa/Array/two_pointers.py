@@ -1,10 +1,14 @@
-def check_palindrome(s):
-    # Remove non-alphanumeric characters and convert to lowercase
-    cleaned = ''.join(c.lower() for c in s if c.isalnum())
-    # Check if the cleaned string is equal to its reverse
-    return cleaned == cleaned[::-1]
+def check_palindrome(arr):
+    # Check if the array is equal to its reverse
+    left, right = 0, len(arr) - 1
+    while left < right:
+        if arr[left] != arr[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
 
 # Example usage:
-s = "A man, a plan, a canal: Panama"
-print(check_palindrome(s))  # Output: True
+arr = [1, 2, 3, 2, 1]
+print(check_palindrome(arr))  # Output: True
 
