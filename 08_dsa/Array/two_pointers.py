@@ -1,5 +1,5 @@
 def check_palindrome(arr):
-    # Check if the array is equal to its reverse
+    # using two pointers to check if the array is a palindrome
     left, right = 0, len(arr) - 1
     while left < right:
         if arr[left] != arr[right]:
